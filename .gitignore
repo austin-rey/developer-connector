@@ -1,2 +1,4 @@
 node_modules/
 setup.txt
+config/default.json
+config/info.txt
