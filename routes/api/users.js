@@ -2,11 +2,8 @@ const express = require('express');
 const router = express.Router();
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
-<<<<<<< HEAD
 const jwt = require('jsonwebtoken');
 const config = require('config');
-=======
->>>>>>> f8fa6fbe1f6188a8522d9450ceb83fa32e530164
 const { check, validationResult } = require('express-validator/check');
 
 const User = require('../../models/User');
@@ -23,7 +20,7 @@ router.post(
     check('email', 'Please include a valid email').isEmail(),
     check(
       'password',
-      'Please enter a password eith 6 or more characters'
+      'Please enter a password with 6 or more characters'
     ).isLength({ min: 6 })
   ],
   async (req, res) => {
@@ -31,7 +28,6 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-
     const { name, email, password } = req.body;
     try {
       // See if user exists
