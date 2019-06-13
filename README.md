@@ -4,6 +4,8 @@ This is a MERN stack application based off a course from Brad Traversy.
 
 This is my first full-stack application.
 
-#### Application URL : Coming Soon
+#### Application URL : 
+Coming Soon
 
-#### Technologies/Tools Used : Coming Soon
+#### Technologies/Tools Used : 
+Node.js, Express, MongoDB, Mongoose, React, Redux, Postman
